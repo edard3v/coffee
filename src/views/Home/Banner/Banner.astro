@@ -1,0 +1,23 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"div"> {}
+
+const { class: cls } = Astro.props;
+---
+
+<div class:list={["banner", cls]}>
+  <picture>
+    <img src="logo.png" alt="logo" />
+  </picture>
+</div>
+
+<style>
+  .banner {
+    width: 100%;
+    min-height: calc(100vh - var(--h_header));
+    display: grid;
+    place-content: center;
+    gap: var(--xl4);
+  }
+</style>

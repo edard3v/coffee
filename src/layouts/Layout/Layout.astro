@@ -1,7 +1,6 @@
 ---
 import "@styles/index.css";
 import "@fontsource-variable/jost";
-import just from "@fontsource-variable/jost/files/jost-latin-wght-normal.woff2";
 import { ClientRouter } from "astro:transitions";
 import Header from "@components/shared/Header/Header.astro";
 import Footer from "@components/shared/Footer/Footer.astro";
@@ -18,7 +17,7 @@ const { title, ...rest } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -28,7 +27,6 @@ const { title, ...rest } = Astro.props;
     <ClientRouter />
 
     <Seo {...rest} title={title} />
-    <link rel="preload" as="font" type="font/woff2" href={just} crossorigin="anonymous" />
   </head>
   <body>
     <Header />

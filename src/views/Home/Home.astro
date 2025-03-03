@@ -1,10 +1,23 @@
 ---
 import Layout from "@layouts/Layout/Layout.astro";
 import { ROUTER } from "@router/router";
+import Banner from "./Banner/Banner.astro";
 ---
 
 <Layout title={ROUTER.home.display}>
-  <main>
-    <h1>Lenguaje HTML</h1>
+  <main class="home">
+    <Banner />
+    <h2>title</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, sit. Optio voluptatem fugit
+      mollitia fuga corrupti accusamus ad officiis distinctio blanditiis suscipit odio voluptatum,
+      quae laboriosam culpa vel, aperiam omnis.
+    </p>
   </main>
 </Layout>
+
+<style>
+  .home {
+    padding-top: 0;
+  }
+</style>
