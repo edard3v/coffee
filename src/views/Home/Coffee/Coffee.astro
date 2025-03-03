@@ -1,0 +1,33 @@
+---
+import css from "./Coffee.module.css";
+import type { HTMLAttributes } from "astro/types";
+import coffee from "./coffee.jpg";
+import Logo from "@components/logos/Logo/Logo.astro";
+
+interface Props extends HTMLAttributes<"article"> {}
+
+const { class: cls } = Astro.props;
+---
+
+<article class:list={[css.coffee, cls]}>
+  <picture>
+    <img src={coffee.src} alt="café" />
+  </picture>
+  <div class={css.wrapper_coffee}>
+    <h1>Experiencia de café</h1>
+    <p>
+      Es un placer invitarle a disfrutar de una experiencia única que le sumerja en el mundo del
+      café de Costa Rica.
+    </p>
+    <p>
+      Juntos exploraremos las sutilezas de la preparación del café y aprenderemos diversas técnicas
+      que resaltan las cualidades únicas de cada grano. Cada taza contará una historia y cada sorbo
+      revelará el corazón del café.
+    </p>
+    <p>
+      Únete a mí en esta oportunidad única para despertar tu pasión por el café y ampliar tus
+      conocimientos.
+    </p>
+    <Logo class={css.logo} />
+  </div>
+</article>

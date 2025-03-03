@@ -1,0 +1,17 @@
+.coffee {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .wrapper_coffee {
+    padding: var(--xl);
+    display: grid;
+    gap: var(--lg);
+    grid-template-rows: repeat(4, auto) 1fr;
+
+    .logo {
+      max-width: 150px;
+      justify-self: end;
+      align-self: end;
+    }
+  }
+}
