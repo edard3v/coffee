@@ -1,6 +1,7 @@
 ---
-import "@fontsource-variable/work-sans"; // Supports weights 100-900
 import "@styles/index.css";
+import "@fontsource-variable/jost";
+import just from "@fontsource-variable/jost/files/jost-latin-wght-normal.woff2";
 import { ClientRouter } from "astro:transitions";
 import Header from "@components/shared/Header/Header.astro";
 import Footer from "@components/shared/Footer/Footer.astro";
@@ -27,6 +28,7 @@ const { title, ...rest } = Astro.props;
     <ClientRouter />
 
     <Seo {...rest} title={title} />
+    <link rel="preload" as="font" type="font/woff2" href={just} crossorigin="anonymous" />
   </head>
   <body>
     <Header />
@@ -44,6 +46,7 @@ const { title, ...rest } = Astro.props;
   body {
     background-color: var(--bg_main);
     color: var(--paras);
+    font-family: "Jost Variable";
 
     display: grid;
     grid-template-rows: auto 1fr auto;
