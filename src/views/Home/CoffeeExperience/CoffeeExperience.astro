@@ -9,7 +9,7 @@ interface Props extends HTMLAttributes<"article"> {}
 const { class: cls } = Astro.props;
 ---
 
-<article class:list={[css.coffee_exp, cls]}>
+<article class:list={[css.coffee_exp, cls]} id="coffee">
   <picture class={css.wrapper_img}>
     <img src={img_4.src} alt="café" />
   </picture>

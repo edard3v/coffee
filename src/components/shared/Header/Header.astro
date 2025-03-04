@@ -1,11 +1,15 @@
 ---
 import Link from "@components/links/Link/Link.astro";
 import { ROUTER } from "@router/router";
+
+const { pathname } = Astro.url;
 ---
 
 <header>
   <nav>
     <Link href={ROUTER.home.href}>{ROUTER.home.display}</Link>
+    {pathname === ROUTER.home.href && <a href="#coffee">Café</a>}
+    {pathname === ROUTER.home.href && <a href="#event">Evento</a>}
     <Link href={ROUTER.contact.href}>{ROUTER.contact.display}</Link>
   </nav>
 </header>
@@ -14,6 +18,10 @@ import { ROUTER } from "@router/router";
   header {
     border-bottom: var(--border);
     min-height: var(--h_header);
+    position: sticky;
+    top: 0;
+    background-color: var(--bg_surf);
+    z-index: 10;
 
     display: grid;
     align-items: center;
