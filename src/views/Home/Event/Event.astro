@@ -1,26 +1,40 @@
 ---
+import Logo from "@components/logos/Logo/Logo.astro";
 import css from "./Event.module.css";
 import img_7 from "./img_7.jpg";
 ---
 
 <article class={css.event}>
-  <div>
+  <div class={css.wrapper_txts}>
     <section class={css.sec_event}>
       <h2>EVENTO</h2>
+
       <div>
-        <div><span>DURACIÓN</span> <span>1:30 Horas</span></div>
-        <div><span>IDEAL PARA</span> <span>TURISTAS Y LOCALES</span></div>
+        <span>DURACIÓN</span>
+        <span class={css.hours}>1:30 HORAS</span>
+        <span>IDEAL PARA</span>
+        <span class={css.turist_locals}>TURISTAS Y LOCALES</span>
       </div>
     </section>
 
     <section class={css.sec_price}>
       <h2>PRECIO</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quis cupiditate maxime sit,
-        doloribus in quisquam explicabo reiciendis, temporibus iusto fugiat alias libero accusamus
-        illo officia sapiente voluptatum mollitia neque.
-      </p>
+      <div>
+        <span>4 PERSONAS</span>
+        <span class={css.each}>$55.00 C/U</span>
+
+        <span>6 PERSONAS</span>
+        <span class={css.each}>$50.00 C/U</span>
+
+        <span>8 PERSONAS</span>
+        <span class={css.each}>$45.00 C/U</span>
+
+        <span>10 PERSONAS</span>
+        <span class={css.each}>$40.00 C/U</span>
+      </div>
     </section>
+
+    <Logo class={css.logo} />
   </div>
 
   <picture class={css.wrapper_img}>

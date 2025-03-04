@@ -1,4 +1,103 @@
 .event {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  .wrapper_txts {
+    padding: var(--xl);
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: var(--xl2);
+
+    @media (min-width: 0px) and (max-width: 1439px) {
+      gap: var(--xl3);
+    }
+
+    .sec_event {
+      display: grid;
+      gap: var(--xl);
+
+      h2 {
+        position: relative;
+        &::after {
+          content: "";
+          width: 100%;
+          height: 2px;
+          background-color: currentColor;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
+      div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--xl2);
+
+        .hours {
+          justify-self: end;
+        }
+
+        .turist_locals {
+          position: relative;
+          justify-self: end;
+
+          &::after {
+            content: "(18 A 70 AÑOS)";
+            position: absolute;
+            right: 0;
+            bottom: -100%;
+            color: var(--grey);
+          }
+        }
+      }
+    }
+
+    .sec_price {
+      display: grid;
+      gap: var(--xl);
+
+      h2 {
+        position: relative;
+        &::after {
+          content: "";
+          width: 100%;
+          height: 2px;
+          background-color: currentColor;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
+      div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--lg);
+
+        .each {
+          justify-self: end;
+        }
+      }
+    }
+
+    .logo {
+      place-self: center;
+      max-width: 280px;
+
+      @media (min-width: 0px) and (max-width: 1023px) {
+        max-width: 160px;
+      }
+    }
+  }
+
+  .wrapper_img {
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }

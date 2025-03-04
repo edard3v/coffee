@@ -28,7 +28,7 @@
       max-width: 280px;
 
       @media (min-width: 0px) and (max-width: 1023px) {
-        max-width: 140px;
+        max-width: 160px;
       }
     }
   }
