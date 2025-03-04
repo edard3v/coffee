@@ -1,0 +1,29 @@
+.banner2 {
+  position: relative;
+
+  .quote {
+    position: absolute;
+    left: 50%;
+    bottom: 1.4rem;
+    transform: translateX(-50%);
+    display: grid;
+    justify-items: center;
+
+    .one {
+      font-size: 1.1rem;
+      line-height: 1.1rem;
+    }
+
+    .two {
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      color: var(--hl);
+    }
+
+    .three {
+      font-size: 2.8rem;
+      line-height: 2.8rem;
+      color: var(--secondary);
+    }
+  }
+}
