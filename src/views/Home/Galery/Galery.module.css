@@ -1,3 +1,8 @@
+.title {
+  padding: var(--xl);
+  text-align: center;
+}
+
 .galery {
   display: flex;
   height: 720px;
@@ -6,15 +11,6 @@
     position: relative;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-
-    img {
-      min-width: 100%;
-      position: sticky;
-      left: 0;
-      flex-grow: initial;
-
-      transition: initial;
-    }
   }
 
   img {
@@ -32,19 +28,16 @@
         filter: contrast(120%);
       }
     }
+
+    @media (min-width: 0px) and (max-width: 1023px) {
+      min-width: 100%;
+      position: sticky;
+      left: 0;
+      scroll-snap-align: center;
+
+      flex-grow: initial;
+      opacity: initial;
+      transition: initial;
+    }
   }
 }
-
-/* .galery {
-  display: flex;
-  position: relative;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  max-width: 480px;
-
-  img {
-    min-width: 100%;
-    position: sticky;
-    left: 0;
-  }
-} */

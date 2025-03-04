@@ -3,6 +3,7 @@ import css from "./Galery.module.css";
 import { GALERY } from "./galery";
 ---
 
+<h6 class={css.title}>GALERÍA</h6>
 <section class={css.galery}>
   {GALERY.map((item) => <img src={item.img.src} alt={item.name} />)}
 </section>
