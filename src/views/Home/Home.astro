@@ -3,18 +3,14 @@ import Layout from "@layouts/Layout/Layout.astro";
 import { ROUTER } from "@router/router";
 import Banner from "./Banner/Banner.astro";
 import CoffeeExperience from "./CoffeeExperience/CoffeeExperience.astro";
+import Banner2 from "./Banner2/Banner2.astro";
 ---
 
 <Layout title={ROUTER.home.display}>
   <main class="home">
     <Banner />
     <CoffeeExperience />
-    <h6>asdf</h6>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem doloremque cumque
-      soluta aspernatur. Odio debitis voluptatum perferendis cupiditate laboriosam. Et non
-      exercitationem totam molestias voluptates quaerat nulla, ea laboriosam.
-    </p>
+    <Banner2 />
   </main>
 </Layout>
 
