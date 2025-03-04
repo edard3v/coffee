@@ -1,10 +1,66 @@
 ---
+import css from "./Policy.module.css";
 import Layout from "@layouts/Layout/Layout.astro";
 import { ROUTER } from "@router/router";
 ---
 
 <Layout title={ROUTER.policy.display}>
-  <main>
-    <h1>Política</h1>
+  <main class={css.policy}>
+    <h1>POLÍTICA DE RESERVAS Y CANCELACIONES</h1>
+
+    <div>
+      <h2>Clase de café por Brandon Fajardo</h2>
+      <p>
+        En Brandon Fajardo Coffee Experience, creemos que cada taza de café cuenta una historia y
+        nos esforzamos por brindar a cada participante una experiencia única y enriquecedora.
+        Nuestra misión es compartir el arte y la ciencia detrás del café costarricense, creando
+        momentos memorables en un ambiente cálido y acogedor. Para garantizar la mejor experiencia
+        posible, hemos establecido la siguiente política de reserva y cancelación.
+      </p>
+    </div>
+
+    <div>
+      <h3>1. Reservas mínimas</h3>
+      <p>
+        Nuestras clases de café requieren un mínimo de 4 participantes. Esta medida garantiza un
+        ambiente ideal para disfrutar de la experiencia en grupo. Excepcionalmente, se permite una
+        reserva para 2 participantes siempre y cuando se cubra el costo de los 2 participantes
+        adicionales. Sin embargo, no se aplicará ningún cargo adicional si hay clases consecutivas
+        en el mismo día, lo que permite que más personas disfruten de nuestras ofertas.
+      </p>
+    </div>
+
+    <div>
+      <h3>2. Política de cancelación</h3>
+      <p>
+        Entendemos que la vida puede ser impredecible. Sin embargo, para mantener la calidad de
+        nuestras clases y la disponibilidad de nuestros recursos, hemos establecido la siguiente
+        política de cancelación:
+      </p>
+
+      <ul>
+        <li>
+          Cancelaciones con menos de 24 horas de antelación: se cobrará el 100% del total de la
+          clase, necesario para cubrir los gastos de preparación y reserva de recursos.
+        </li>
+
+        <li>
+          Cancelaciones realizadas con al menos 24 horas de antelación: se cobrará el 50% del total
+          de la clase. Esto nos permite ajustar nuestros planes y ofrecer el espacio a otros
+          participantes interesados
+        </li>
+
+        <li>
+          Cancelaciones realizadas con al menos 48 horas de antelación: se cobrará el 25% del total
+          de la clase. Esto también nos ayuda a ajustar nuestros planes para ofrecer el espacio a
+          otros participantes interesados.
+        </li>
+      </ul>
+    </div>
+
+    <p>
+      Toda cancelación deberá ser comunicada a través de los canales establecidos (teléfono, email,
+      etc.) para que sea considerada válida. Agradecemos su comprensión al respecto.
+    </p>
   </main>
 </Layout>

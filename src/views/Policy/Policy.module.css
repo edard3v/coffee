@@ -1,0 +1,8 @@
+.policy {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  gap: var(--xl);
+  padding: var(--xl);
+}
