@@ -4,8 +4,8 @@ export const ROUTER = {
     display: "Inicio",
   },
 
-  contact: {
-    href: "/contacto/",
-    display: "Contacto",
+  policy: {
+    href: "/politica/",
+    display: "Política",
   },
 };
