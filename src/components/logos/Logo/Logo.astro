@@ -9,7 +9,7 @@ const { class: cls, ...rest } = Astro.props;
 ---
 
 <picture {...rest} class:list={["logo", cls]}>
-  <Image src={logo} alt="logo" width={400} height={272} format="avif" />
+  <Image src={logo} alt="logo" width={400} height={272} format="avif" loading={"eager"} />
 </picture>
 
 <style>
