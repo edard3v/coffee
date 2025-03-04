@@ -5,7 +5,7 @@
   place-content: center;
   padding: var(--lg);
 
-  picture {
+  .logo {
     max-width: 400px;
   }
 }

@@ -1,4 +1,5 @@
 ---
+import Logo from "@components/logos/Logo/Logo.astro";
 import css from "./Banner.module.css";
 import type { HTMLAttributes } from "astro/types";
 
@@ -8,7 +9,5 @@ const { class: cls } = Astro.props;
 ---
 
 <div class:list={[css.banner, cls]}>
-  <picture>
-    <img src="logo.png" alt="logo" />
-  </picture>
+  <Logo class={css.logo} />
 </div>
