@@ -2,7 +2,7 @@ export const SEO = {
   title: "Café",
   description: "Descubre el mundo del café: recetas, métodos de preparación y curiosidades.",
   author: "edard3v",
-  img: "https://res.cloudinary.com/dzuo8j1qg/image/upload/v1733991158/coffee-banner.jpg",
+  img: "https://res.cloudinary.com/dzuo8j1qg/image/upload/v1741119204/coffee/v2vg7zep3zblmhap1uq3.jpg",
   keywords: [
     "café",
     "coffee",
