@@ -3,11 +3,17 @@
   height: 720px;
 
   @media (min-width: 0px) and (max-width: 1023px) {
-    :nth-child(2),
-    :nth-child(3),
-    :nth-child(7),
-    :nth-child(8) {
-      display: none;
+    position: relative;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    img {
+      min-width: 100%;
+      position: sticky;
+      left: 0;
+      flex-grow: initial;
+
+      transition: initial;
     }
   }
 
@@ -16,7 +22,7 @@
     flex-grow: 1;
     object-fit: cover;
     opacity: 0.8;
-    transition: all 0.4s ease-in-out;
+    transition: 0.4s;
 
     @media (hover: hover) {
       &:hover {
@@ -28,3 +34,17 @@
     }
   }
 }
+
+/* .galery {
+  display: flex;
+  position: relative;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  max-width: 480px;
+
+  img {
+    min-width: 100%;
+    position: sticky;
+    left: 0;
+  }
+} */
