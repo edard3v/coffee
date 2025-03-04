@@ -1,0 +1,19 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import logo from "./icon_logo.png";
+
+interface Props extends HTMLAttributes<"picture"> {}
+
+const { class: cls, ...rest } = Astro.props;
+---
+
+<picture {...rest} class:list={["logo", cls]}>
+  <img src={logo.src} alt="logo" />
+</picture>
+
+<style>
+  .logo {
+    max-width: 120px;
+    overflow: hidden;
+  }
+</style>

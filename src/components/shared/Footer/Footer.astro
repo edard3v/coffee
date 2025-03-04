@@ -1,8 +1,11 @@
 ---
+import IconLogo from "@components/logos/IconLogo/IconLogo.astro";
 import Network from "../../navs/Network/Network.astro";
 ---
 
 <footer>
+  <IconLogo />
+  <p>©Casi todos los derechos reservados</p>
   <Network class={"network"} />
 </footer>
 
@@ -12,7 +15,7 @@ import Network from "../../navs/Network/Network.astro";
     justify-items: center;
     gap: var(--lg);
 
-    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    background: var(--bg_main);
     text-align: center;
     padding: var(--xl);
   }
