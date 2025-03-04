@@ -1,0 +1,19 @@
+.galery {
+  display: flex;
+  height: 720px;
+
+  img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.4s;
+
+    &:hover {
+      cursor: crosshair;
+      width: 480px;
+      opacity: 1;
+      filter: contrast(120%);
+    }
+  }
+}

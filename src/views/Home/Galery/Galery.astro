@@ -1,0 +1,8 @@
+---
+import css from "./Galery.module.css";
+import { GALERY } from "./galery";
+---
+
+<section class={css.galery}>
+  {GALERY.map((item) => <img src={item.img.src} alt={item.name} />)}
+</section>
