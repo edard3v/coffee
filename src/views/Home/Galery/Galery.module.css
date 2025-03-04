@@ -2,6 +2,21 @@
   display: flex;
   height: 720px;
 
+  @media (min-width: 0px) and (max-width: 1023px) {
+    :nth-child(2) {
+      display: none;
+    }
+    :nth-child(3) {
+      display: none;
+    }
+    :nth-child(7) {
+      display: none;
+    }
+    :nth-child(8) {
+      display: none;
+    }
+  }
+
   img {
     width: 0;
     flex-grow: 1;
