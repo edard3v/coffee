@@ -1,6 +1,7 @@
 :root {
+  font-size: 20px;
   @media (min-width: 320px) and (max-width: 767px) {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 

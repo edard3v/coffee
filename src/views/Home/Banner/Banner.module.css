@@ -1,0 +1,11 @@
+.banner {
+  width: 100%;
+  min-height: calc(100vh - var(--h_header));
+  display: grid;
+  place-content: center;
+  padding: var(--lg);
+
+  picture {
+    max-width: 400px;
+  }
+}
