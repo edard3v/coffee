@@ -8,7 +8,7 @@ const { pathname } = Astro.url;
 <header>
   <nav>
     <Link href={ROUTER.home.href}>{ROUTER.home.display}</Link>
-    {pathname === ROUTER.home.href && <a href="#coffee">Café</a>}
+    {pathname === ROUTER.home.href && <a href="#coffee">Experiencia</a>}
     {pathname === ROUTER.home.href && <a href="#event">Evento</a>}
     <Link href={ROUTER.policy.href}>{ROUTER.policy.display}</Link>
   </nav>
