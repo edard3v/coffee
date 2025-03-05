@@ -1,10 +1,13 @@
 export const SEO = {
-  title: "Café",
+  title: "Café brandon fajardo",
   description: "Descubre el mundo del café: recetas, métodos de preparación y curiosidades.",
   author: "edard3v",
   img: "https://res.cloudinary.com/dzuo8j1qg/image/upload/v1741119204/coffee/v2vg7zep3zblmhap1uq3.jpg",
   keywords: [
     "café",
+    "brandon",
+    "fajardo",
+    "brandon fajardo",
     "coffee",
     "barista",
     "recetas de café",
